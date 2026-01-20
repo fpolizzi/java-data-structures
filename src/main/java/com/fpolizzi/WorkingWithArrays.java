@@ -5,7 +5,7 @@ import java.util.Arrays;
 /**
  * Created by fpolizzi on 13.01.26
  */
-public class TheArrays {
+public class WorkingWithArrays {
     /**
      * Demonstrates array initialization, access, and iteration techniques
      */
