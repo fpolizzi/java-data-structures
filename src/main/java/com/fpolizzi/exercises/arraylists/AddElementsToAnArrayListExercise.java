@@ -13,8 +13,8 @@ public class AddElementsToAnArrayListExercise {
      */
     static void main() {
 
-        ArrayList<Integer> integerList = new ArrayList<>(List.of(1, 2, 3, 4, 5));
-        ArrayList<Integer> integerListToAdd = new ArrayList<>(List.of(6, 7, 8, 9, 10));
+        List<Integer> integerList = new ArrayList<>(List.of(1, 2, 3, 4, 5));
+        List<Integer> integerListToAdd = new ArrayList<>(List.of(6, 7, 8, 9, 10));
 
         System.out.println(integerList);
 
@@ -24,8 +24,8 @@ public class AddElementsToAnArrayListExercise {
     }
 
     private static void addIntegerListToAnArrayList(
-             ArrayList<Integer> integerListToAdd,
-             ArrayList<Integer> integerList) {
+             List<Integer> integerListToAdd,
+             List<Integer> integerList) {
         integerList.addAll(integerListToAdd);
     }
 }
