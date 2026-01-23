@@ -11,3 +11,13 @@
  - **Jagged Arrays:** Can have different numbers of rows and columns
  - **Good choice for matrix** (grid or table use cases)
  - **Ideal for board games** (chess board, Conways Game of Life, etc.)
+
+# ArrayLists
+ - **Dynamic Size:** Can grow or shrink as needed
+ - **Zero-Based Indexing:** Similar to arrays
+ - **Homogeneous Elements:** All elements must be of the same type
+ - **Random Access:** Index can access elements directly in O(1) time
+ - **Efficient Insertion and Deletion:** Supports adding and removing elements efficiently
+ - **Good choice for dynamic data** (collections, lists, etc.)
+ - **Ideal for dynamic programming** (dynamic programming, etc.)
+
