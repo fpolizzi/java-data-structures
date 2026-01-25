@@ -21,3 +21,22 @@
  - **Good choice for dynamic data** (collections, lists, etc.)
  - **Ideal for dynamic programming** (dynamic programming, etc.)
 
+# Stacks
+- **LIFO Order:** Last element in is the first element out
+- **Push Operation:** Adds an element to the top of the stack
+- **Pop Operation:** Removes and returns the top element
+- **Peek Operation:** Views the top element without removing it
+- **Fixed or Dynamic Size:** Can be implemented with fixed or resizable capacity
+- **push(E element):** Adds element to top of stack
+- **pop():** Removes and returns top element
+- **peek():** Returns top element without removing it
+- **empty():** Returns true if stack contains no elements
+- **search(Object o):** Returns position of element from top of stack
+- **Undo/Redo Operations:** In text editors and graphics programs
+- **Browser History:** Back/Forward navigation
+- **Function Call Management:** Program execution stack
+- **Expression Evaluation:** Parsing mathematical expressions
+- **The built-in Stack class** (extends Vector)
+- **ArrayDeque** as a more efficient alternative
+- **ArrayList or LinkedList** with stack operations
+- **Array-based** custom implementation
