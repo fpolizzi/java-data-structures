@@ -28,6 +28,9 @@ public class FirstNonRepeatingCharacterInStream {
     }
 
     void main() {
-        System.out.println(findFirstNonRepeatingCharacter("acdaa"));
+
+        String input = "acdaca";
+
+        System.out.println(findFirstNonRepeatingCharacter(input));
     }
 }
