@@ -22,19 +22,19 @@ public class GenerateBinaryNumbers {
         // Enqueue the first binary number
         q.add("1");
 
-        //
+        // test if n is greater than 0 then decrement n by 1
         while (n-- > 0) {
 
-            String s1 = q.poll();
-            result.add(s1);
+            String str = q.poll();
+            result.add(str);
 
             if(q.size() < n){
 
                 // Append "0" to s1 and enqueue it.
-                q.add(s1 + "0");
+                q.add(str + "0");
 
                 // Append "1" to s1 and enqueue it.
-                q.add(s1 + "1");
+                q.add(str + "1");
             }
         }
 
@@ -42,7 +42,9 @@ public class GenerateBinaryNumbers {
     }
 
     void main() {
+
         int n = 5;
+
         ArrayList<String> res = generateBinary(n);
         for (String i : res) {
             System.out.print(i + " ");
