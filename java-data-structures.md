@@ -40,3 +40,16 @@
 - **ArrayDeque** as a more efficient alternative
 - **ArrayList or LinkedList** with stack operations
 - **Array-based** custom implementation
+
+# Queues
+- **FIFO Order:** First element in is the first element out
+- **Enqueue Operation:** Adds an element to the back of the queue
+- **Dequeue Operation:** Removes and returns the front element
+- **Peek Operation:** Views the front element without removing it
+- **Fixed or Dynamic Size:** Can be implemented with fixed or resizable capacity
+- **enqueue(E element):** Adds element to back of queue
+- **dequeue():** Removes and returns front element
+- **peek():** Returns the front element without removing it
+- **empty():** Returns true if the queue contains no elements
+- **typical use case:** Message queues, task scheduling, 
+managing customer support tickets, print job management
