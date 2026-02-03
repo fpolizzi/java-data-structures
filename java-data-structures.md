@@ -53,3 +53,27 @@
 - **empty():** Returns true if the queue contains no elements
 - **typical use case:** Message queues, task scheduling, 
 managing customer support tickets, print job management
+
+# Linked Lists
+- **Dynamic Size:** Grows and shrinks as needed
+- **Non-Contiguous Memory:** Elements not stored in contiguous memory locations
+- **Bidirectional:** Can be traversed in both directions (in doubly-linked lists)
+- **Reference-Based:** Uses references to connect nodes
+- **No Index-Based Access:** Must traverse from start/end to reach elements
+- **add(E element):** Adds an element to the end of the list
+- **add(int index, E element):** Inserts element at specified position
+- **remove(Object o):** Removes first occurrence of element
+- **get(int index):** Returns element at specified position
+- **set(int index, E element):** Replaces element at specified position
+- Efficient insertion/deletion at beginning and end (O(1))
+- Dynamic memory allocation
+- No need to resize or reallocate
+- Memory efficient for large elements
+- No random access to elements
+- Extra memory for storing references
+- Not cache-friendly due to non-contiguous storage
+- Sequential access can be slower than arrays
+- The built-in LinkedList class
+- Custom implementation with Node class
+- As a doubly-linked or singly-linked list
+- With various specialized behaviors (circular, skip lists, etc.)
