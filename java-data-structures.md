@@ -77,3 +77,24 @@ managing customer support tickets, print job management
 - Custom implementation with Node class
 - As a doubly-linked or singly-linked list
 - With various specialized behaviors (circular, skip lists, etc.)
+
+# Sets
+- **No Duplicates:** Each element can appear only once in a set
+- **Unordered:** Elements typically have no defined order (except for LinkedHashSet)
+- **Null Elements:** Some implementations allow null elements, others don't
+- **Fast Lookup:** Generally provides fast lookup operations
+- **Dynamic Size:** Grows and shrinks as needed
+- **add(E element):** Adds element if not already present
+- **remove(Object o):** Removes specified element if present
+- **contains(Object o):** Returns true if element exists in set
+- **size():** Returns number of elements in set
+- **isEmpty():** Returns true if set contains no elements
+- **HashSet:** Most common implementation, uses hash table
+- **TreeSet:** Sorted set based on tree structure
+- **LinkedHashSet:** Hash table with linked list, maintains insertion order
+- **EnumSet:** Specialized implementation for enum types
+- **Removing Duplicates:** Converting collections to sets
+- **Membership Testing:** Checking if elements exist
+- **Mathematical Set Operations:** Union, intersection, difference
+- **Unique Constraint:** Ensuring uniqueness in data
+- **Caching:** Storing unique values for quick lookup
