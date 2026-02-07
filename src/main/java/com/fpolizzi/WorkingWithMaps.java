@@ -2,6 +2,7 @@ package com.fpolizzi;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 /**
  * Created by fpolizzi on 06.02.26
@@ -9,6 +10,24 @@ import java.util.Map;
 public class WorkingWithMaps {
 
     static void main() {
+
+        // define a map and add a key-value pair
+        Map<Person, Diamond> map = new HashMap<>();
+        map.put(new Person("John", 30), new Diamond("African Diamond"));
+
+        // prints the hash code of the object
+        System.out.println(new Person("John", 30).hashCode());
+
+        // prints the object
+        System.out.println(new Person("John", 30));
+
+        // prints value of the key
+        System.out.println(map.get(new Person("John", 30)));
+
+        // maps();
+    }
+
+    private static void maps() {
 
         // define a map of persons
         Map<Integer, Person> personMap = new HashMap<>();
@@ -49,6 +68,40 @@ public class WorkingWithMaps {
         personMap.entrySet().forEach(System.out::println);
     }
 
-    record Person(String name, int age) {
+    static class Person {
+        String name;
+        int age;
+
+        public Person(String name, int age) {
+            this.name = name;
+            this.age = age;
+        }
+
+        @Override
+        public String toString() {
+            return "Person{" +
+                    "name='" + name + '\'' +
+                    ", age=" + age +
+                    '}';
+        }
+
+        @Override
+        public int hashCode() {
+            return Objects.hash(name);
+        }
+
+        /**
+         * Implements equality check based on name and age
+         */
+        @Override
+        public boolean equals(Object obj) {
+            if (this == obj) return true;
+            if (obj == null || getClass() != obj.getClass()) return false;
+            Person person = (Person) obj;
+            return age == person.age && name.equals(person.name);
+        }
+    }
+
+    record Diamond(String name) {
     }
 }
